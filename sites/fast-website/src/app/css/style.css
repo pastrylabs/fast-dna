@@ -27,6 +27,12 @@ body {
   height: 80px;
 }
 
+.header-navigation {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
 .header-navigation-item {
   margin: 0 30px;
 }
