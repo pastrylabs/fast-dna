@@ -7,7 +7,7 @@
         "experimentalDecorators": true
     },
     "include": [
-        "src/**/*"
+        "src/**/*", "../fast-foundation/src/tree-view/tree-view.template.ts", "../fast-foundation/src/tree-view/tree-view.ts", "../fast-foundation/src/tree-item/tree-item.ts", "../fast-foundation/src/tree-item/tree-item.template.ts"
     ],
     "exclude": [
         "node_modules",

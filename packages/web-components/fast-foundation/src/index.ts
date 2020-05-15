@@ -20,6 +20,8 @@ export * from "./switch/index.js";
 export * from "./tabs/index.js";
 export * from "./text-area/index.js";
 export * from "./text-field/index.js";
+export * from "./tree-item/index.js";
+export * from "./tree-view/index.js";
 
 // export our utilities
 export * from "./utilities/index.js";
