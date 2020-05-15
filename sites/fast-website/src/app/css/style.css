@@ -28,13 +28,21 @@ body {
 }
 
 .header-navigation {
+  overflow: hidden;
+}
+
+.header-navigation ul {
   display: flex;
   list-style-type: none;
   margin: 0;
 }
 
-.header-navigation-item {
+.header-navigation li {
   margin: 0 30px;
+}
+
+.header-menu {
+  visibility: hidden;
 }
 
 .section {
@@ -109,4 +117,16 @@ site-content-placement:hover .section-anchor-hover{
 
 .footer-navigation-item {
   margin-inline-end: 50px;
+}
+
+@media screen and (max-width: 740px) {
+  .header-navigation :not(:first-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header-navigation__responsive {
+    position: relative;
+  }
 }

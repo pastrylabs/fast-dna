@@ -14,13 +14,13 @@
       <div class="wrapper">
         <!-- header:start -->
         <header class="header">
-          <site-navigation>
+          <site-navigation class="header-navigation" id="header-navigation-id">
             <fast-anchor slot="start" appearance="lightweight" href="#">FAST</fast-anchor>
-            <ul class="header-navigation">
-              <li><fast-anchor class="header-navigation-item" appearance="lightweight" href="#">Components</fast-anchor></li>
-              <li><fast-anchor class="header-navigation-item" appearance="lightweight" href="#">Integration</fast-anchor></li>
-              <li><fast-anchor class="header-navigation-item" appearance="lightweight" href="#">Documentation</fast-anchor></li>
-              <li><fast-anchor class="header-navigation-item" appearance="lightweight" href="#">Community</fast-anchor></li>
+            <ul>
+              <li><fast-anchor appearance="lightweight" href="#">Components</fast-anchor></li>
+              <li><fast-anchor appearance="lightweight" href="#">Integration</fast-anchor></li>
+              <li><fast-anchor appearance="lightweight" href="#">Documentation</fast-anchor></li>
+              <li><fast-anchor appearance="lightweight" href="#">Community</fast-anchor></li>
             </ul>
             <fast-anchor slot="end" appearance="lightweight" href="#">
               Github
@@ -29,13 +29,7 @@
               </svg>
             </fast-anchor>
           </site-navigation>
-          <fast-button appearance="stealth">
-            <svg width="35" height="19" viewBox="0 0 35 19" xmlns="http://www.w3.org/2000/svg">
-              <rect width="35" height="3" rx="1.5"/>
-              <rect x="8" y="8" width="27" height="3" rx="1.5"/>
-              <rect x="8" y="16" width="27" height="3" rx="1.5"/>
-            </svg>
-          </fast-button>
+          <fast-button class="header-menu" appearance="stealth">&#9776;</fast-button>
         </header>
         <!-- header:end -->
 
@@ -195,5 +189,15 @@
         <!-- footer:end -->
       </div>
     </website-design-system-provider>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("header-navigation-id");
+        if(x.className === "header-navigation") {
+          x.className += "header-navigation__responsive";
+        } else {
+          x.className = "header-navigation"
+        }
+      }
+    </script>
   </body>
 </html>
